@@ -11,4 +11,4 @@ OfferForge 的 **Java 后端服务**:对外提供 API,承载面经的归类、�
 
 ## 状态
 
-🚧 空骨架。框架(Spring Boot 等)、构建工具(Maven / Gradle)、数据库与 ORM 等选型待定,见 [../docs/tech-stack.md](../docs/tech-stack.md)。
+🚧 空骨架。首期后端技术栈已确定为 Java 21 + Spring Boot 3.x + Maven + PostgreSQL + MyBatis-Plus + Redis,见 [../docs/tech-stack.md](../docs/tech-stack.md)。

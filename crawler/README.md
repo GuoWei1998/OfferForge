@@ -10,7 +10,11 @@ OfferForge 的 **爬虫服务**:从内容平台采集用户分享的面经。
 
 ## 状态
 
-🚧 空骨架。技术选型(Python / Java 等)、采集策略、合规与频控待定,见 [../docs/tech-stack.md](../docs/tech-stack.md)。
+🚧 空骨架。爬虫主体已确定采用 Python + Scrapy,HTML 解析使用 BeautifulSoup/lxml,动态页面按需使用 Playwright。采集策略、合规与频控细节待定,见 [../docs/tech-stack.md](../docs/tech-stack.md)。
+
+## 数据交付
+
+爬虫产出结构化数据后,优先通过后端 ingestion API 提交,由后端统一完成校验、去重与入库。
 
 ## 注意
 
