@@ -11,4 +11,30 @@ OfferForge 的 **Java 后端服务**:对外提供 API,承载面经的归类、�
 
 ## 状态
 
-🚧 空骨架。首期后端技术栈已确定为 Java 21 + Spring Boot 3.x + Maven + PostgreSQL + MyBatis-Plus + Redis,见 [../docs/tech-stack.md](../docs/tech-stack.md)。
+最小 Spring Boot 工程已初始化,当前提供健康检查接口。后续将逐步接入 PostgreSQL、MyBatis-Plus、Redis、Flyway 等能力。
+
+## 本地运行
+
+```bash
+./mvnw spring-boot:run
+```
+
+启动后访问:
+
+- `http://localhost:8080/api/health`
+- `http://localhost:8080/actuator/health`
+
+运行测试:
+
+```bash
+./mvnw test
+```
+
+## Docker
+
+```bash
+docker build -t offerforge-backend .
+docker run --rm -p 8080:8080 offerforge-backend
+```
+
+完整技术选型见 [../docs/tech-stack.md](../docs/tech-stack.md)。
